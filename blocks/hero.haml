@@ -1,0 +1,135 @@
+-#	This template is for a Hero CTA Section.  When using this section you have the following variables
+-#		$block - used to set the block number on the page, each repeating block has to have a unique number
+-#		$col - used to set the width of the hero container
+
+-# Sets the space to enter the Hero Image, and converts it to Template Context
+{% image "hero" export_to_template_context=True, label="Hero Image" %}
+
+%div.home-hero{:style => "background-image: url('{{ widget_data.hero.src }}')"}
+	%div.overlay
+		%div.row
+		-# This defines our dropdown select box, to change options make edits to choices
+		{% choice "hero_layout" label="Hero Layout", choices="Centered, Left, Right", export_to_template_context=True %}
+
+		-# This defines the modules we will be using in HubSpot, and exports them to template context
+
+		-# This Sets Our Value Prop Header
+		{% header "valueprop_header_<!-- $block | one -->" export_to_template_context=True, label="Value Proposition Header", header_tag="h1", value="This Is An H1" %}
+
+		-# This Sets Our Value Prop Subheader
+		{% header "valueprop_subheader_<!-- $block | one -->" export_to_template_context=True, label="Value Proposition Subheader", header_tag="h4", value="This Is An H4" %}
+
+		-# This defines our CTA select box, to change options make edits to choices
+		{% choice "valueprop_cta_number_<!-- $block | one -->" label="Choose How Many CTA's", choices="1, 2", export_to_template_context=True %}
+
+		-# This Sets Our Left CTA Button
+		{% cta "valueprop_cta_button_left_<!-- $block | one -->" export_to_template_context=True, label="Value Proposition Left CTA Button", no_wrapper=True %}
+
+		-# This Sets Our Right CTA Button
+		{% cta "valueprop_cta_button_right_<!-- $block | one -->" export_to_template_context=True, label="Value Proposition Right CTA Button", no_wrapper=True %}
+
+
+
+		-# This tests the dropdown selection and if true executes the code below
+		{% if widget_data.hero_layout.value == "Centered" %}
+
+		-# This Section Is For A Centered Hero
+		%article{:class => ["<!-- $col | nine -->", "columns"]}
+			%center
+
+				-# Checks to see if content exists
+				{% if widget_data.valueprop_header_<!-- $block | one -->.value %}
+				%h1 {{ widget_data.valueprop_header_<!-- $block | one -->.value }}
+				{% endif %}
+				
+				-# Checks to see if content exists
+				{% if widget_data.valueprop_header_<!-- $block | one -->.value %}
+				%h4 {{ widget_data.valueprop_subheader_<!-- $block | one -->.value }}
+				{% endif %}
+
+				-# Executes if Value is 2
+				{% if widget_data.valueprop_cta_number_<!-- $block | one -->.value == "2" %}
+				%div.row
+					%div.four.centered.columns
+						%div.row
+							%div.six.columns
+								{{ widget_data.valueprop_cta_button_left_<!-- $block | one -->.embed_code }}
+							%div.six.columns
+								{{ widget_data.valueprop_cta_button_right_<!-- $block | one -->.embed_code }}
+				
+				-# Executes if Value is 1
+				{% elif widget_data.valueprop_cta_number_<!-- $block | one -->.value == "1" %}
+				%div.row
+					%div.two.centered.columns
+						{% if widget_data.valueprop_cta_button_left_<!-- $block | one -->.embed_code %}
+						{{ widget_data.valueprop_cta_button_left_<!-- $block | one -->.embed_code }}
+						{% elif widget_data.valueprop_cta_button_right_<!-- $block | one -->.embed_code %}
+						{{ widget_data.valueprop_cta_button_right_<!-- $block | one -->.embed_code }} 
+						{% endif %}
+				{% endif %}
+
+
+		-# This tests the dropdown selection and if true executes the code below
+		{% elif widget_data.hero_layout.value == "Left" or  widget_data.hero_layout.value == "Left" %}
+
+		
+		%article{:class => ["<!-- $col | nine -->", "columns"]}
+			{% if widget_data.valueprop_header_<!-- $block | one -->.value %}
+			%h1 {{ widget_data.valueprop_header_<!-- $block | one -->.value }}
+			{% endif %}
+
+			{% if widget_data.valueprop_header_<!-- $block | one -->.value %}
+			%h4 {{ widget_data.valueprop_subheader_<!-- $block | one -->.value }}
+			{% endif %}
+				
+			-# This Section Is For A Left Aligned Hero
+			{% if widget_data.valueprop_cta_button_left_<!-- $block | one -->.embed_codee and widget_data.valueprop_cta_button_right_<!-- $block | one -->.embed_code %}
+
+			-# Executes if Value is 2
+			{% if widget_data.valueprop_cta_number_<!-- $block | one -->.value == "2" %}
+			%div.row
+				%div.four.centered.columns
+					%div.row
+						%div.six.columns
+							{{ widget_data.valueprop_cta_button_left_<!-- $block | one -->.embed_code }}
+						%div.six.columns
+							{{ widget_data.valueprop_cta_button_right_<!-- $block | one -->.embed_code }}
+			
+			-# Executes if Value is 1
+			{% elif widget_data.valueprop_cta_number_<!-- $block | one -->.value == "1" %}
+			%div.row
+				%div.two.centered.columns
+					{% if widget_data.valueprop_cta_button_left_<!-- $block | one -->.embed_code %}
+					{{ widget_data.valueprop_cta_button_left_<!-- $block | one -->.embed_code }}
+					{% elif widget_data.valueprop_cta_button_right_<!-- $block | one -->.embed_code %}
+					{{ widget_data.valueprop_cta_button_right_<!-- $block | one -->.embed_code }} 
+					{% endif %}
+			{% endif %}
+
+			-# This Section Is For A Right Aligned Hero
+			{% elif widget_data.hero_layout.value == "Left" or  widget_data.hero_layout.value == "Right" %}
+
+			-# Executes if Value is 2
+			{% if widget_data.valueprop_cta_number_<!-- $block | one -->.value == "2" %}
+			%div.row
+				%div.four.centered.columns
+					%div.row
+						%div.six.columns.right
+							{{ widget_data.valueprop_cta_button_left_<!-- $block | one -->.embed_code }}
+						%div.six.columns.right
+							{{ widget_data.valueprop_cta_button_right_<!-- $block | one -->.embed_code }}
+			
+			-# Executes if Value is 1
+			{% elif widget_data.valueprop_cta_number_<!-- $block | one -->.value == "1" %}
+			%div.row
+				%div.two.columns.right
+					{% if widget_data.valueprop_cta_button_left_<!-- $block | one -->.embed_code %}
+					{{ widget_data.valueprop_cta_button_left_<!-- $block | one -->.embed_code }}
+					{% elif widget_data.valueprop_cta_button_right_<!-- $block | one -->.embed_code %}
+					{{ widget_data.valueprop_cta_button_right_<!-- $block | one -->.embed_code }} 
+					{% endif %}
+			{% endif %}
+			{% endif %}
+
+		-# This closes the hero dropdown test
+		{% endif %}

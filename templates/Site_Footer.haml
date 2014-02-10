@@ -1,0 +1,23 @@
+-# HubSpot Meta Is Required, this file shoudl only have an ID if HubSpot placed it there, for includes like this use category include, creatable false
+/
+    [hubspot-metadata]
+    {
+    "category": "include", 
+    "creatable": false,
+    "path": "custom/page/Layouts/Site_Page_Footer.html"
+    }
+    [end-hubspot-metadata]
+
+%footer
+    %div.row
+        %div.twelve.columns
+            %center
+                %p©{{ year }} DataOne Software
+
+    %div.sub-footer
+        %div.row
+            %div.twelve.columns
+                %p Site Design and Development by <a href="http://www.impactbnd.com" target="_new">IMPACT</a></p>
+
+
+{{standard_footer_includes}}

@@ -1,0 +1,29 @@
+/
+    [hubspot-metadata]
+    {
+    "category": "include", 
+    "creatable": false,
+    "path": "custom/page/Layouts/Site_Page_Head.html"
+    }
+    [end-hubspot-metadata]
+ 
+%head
+    %meta{:charset => "utf-8"}
+    %meta{:name => "author", :content => "{{ site_settings.company_name }}"}
+    %meta{:name => "description", :content => "{{ page_meta.meta_description }}"}
+    %meta{:name => "generator", :content => "HubSpot"}
+    %meta{:name => "viewport", :content => "width=device-width initial-scale=1.0"}
+     
+    %title DataOne Software | {{ page_meta.html_title }}
+    
+    {% if site_settings.favicon_src %}<link rel="shortcut icon" href="{{ site_settings.favicon_src }}" />{% endif %}
+
+    {% block header %} {% endblock %}
+      
+    %link{:rel => "stylesheet", :type => "text/css", :href => "http://impactgit.wpengine.com/dataone/css/app.css"}
+    %link{:rel => "stylesheet", :type => "text/css", :href => "http://dataone.dev/styles/app.css"}
+    %link{:rel => "stylesheet", :type => "text/css", :href => "../files/fonts/foundation-icons/foundation-icons.css"}
+    %link{:href => "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css", :rel => "stylesheet"}
+    
+    %script{:type => "text/javascript",
+            :src => "../files/js/vendor/modernizr.js"}

@@ -1,0 +1,36 @@
+/
+    [hubspot-metadata]
+    {
+    "category": "include", 
+    "creatable": false,
+    "path": "custom/page/Layouts/Site_Page_Header.html"
+    }
+    [end-hubspot-metadata]
+    
+%header
+    %div.top-bar
+        %div.row
+            %div.three.offset-by-nine.columns
+                %span.social-icons
+                    %a{:href => "https://plus.google.com/116732344798891680779/posts",
+                        :target => "_blank"}
+                        %i.fa.fa-google-plus
+                    %a{:href => "http://twitter.com/DataOneSoftware",
+                        :target => "_blank"}
+                        %i.fa.fa-twitter
+                    %a{:href => "http://www.facebook.com/pages/DataOne-Software/173530752689084",
+                        :target => "_blank"}
+                        %i.fa.fa-facebook
+                %a{:href => "https://my.dataonesoftware.com/client-portal/"}
+                    Client Login »
+
+    %div.header
+        %div.row
+            %div.three.columns
+                %div.logo
+                    {% logo "dataone_logo" %}
+            %div.nine.columns
+                %div.menu
+                    {% menu "header_menu" label="header_menu", flow="horizontal", flouts="true", max_levels=3, site_map_name="Header Menu" %}
+
+{{ standard_header_includes }}

@@ -1,0 +1,25 @@
+/
+	[hubspot-metadata]
+	{
+	"category": "page", 
+	"creatable": true,
+	-# Change the Homepage.html to the name that you want to call this page |
+		For Landing Pages change to custom/Landing_Pages/*.html
+	"path": "custom/page/Homepage.html"
+	}
+	[end-hubspot-metadata]
+
+!!! 5
+%html{:xmlns => "http://www.w3.org/1999/xhtml", "xml:lang" => "en", :lang => "en"}
+
+	-# This Tells HubSpot To Include The Site Head
+	{% include "custom/page/Layouts/Site_Page_Head.html" %}
+
+	%body
+		
+		-# This Tells HubSpot To Include The Site Header
+		{% include "custom/page/Layouts/Site_Page_Header.html" %}
+		
+	
+	-# This Tells HubSpot To Include The Site Footer
+	{% include "custom/page/Layouts/Site_Page_Footer.html" %}
