@@ -1,0 +1,4 @@
+{!!python/unicode 'access_token': !!python/unicode '51fa9181-9288-11e3-8fa7-4b84c657b52f',
+  api_key: null, !!python/unicode 'client_id': !!python/unicode '0da887c1-7a39-11e3-b3d8-a9879125cbed',
+  hub_id: '298890', !!python/unicode 'refresh_token': !!python/unicode '51f624b0-9288-11e3-8fa7-4b84c657b52f',
+  secret: cbfaa5a7-df98-4d85-a553-d41c9052492a}

@@ -1,0 +1,55 @@
+/
+	[hubspot-metadata]
+	{
+    "category": "page", 
+    "creatable": true,
+    "path": "custom/page/Landing_Pages/main.html"
+	}
+	[end-hubspot-metadata]
+
+!!! 5
+%html{:xmlns => "http://www.w3.org/1999/xhtml", "xml:lang" => "en", :lang => "en"}
+
+	-# This Tells HubSpot To Include The Site Head
+	{% include "custom/page/Layouts/Site_Page_Head.html" %}
+
+	%body.landing-page.{{ builtin_body_classes }}
+
+	%header
+		.grid-wrapper
+			.grid.one-thrid
+				.logo
+					{% logo "dataone_logo" %}
+			.grid.two-thirds
+		{{standard_header_includes}}
+
+		{% image "landing_page_linked_hero_image" export_to_template_context=True, src="" %}
+		.landing-page-hero.hero{:style => "background: {% if widget_data.landing_page_linked_hero_image.src %}url('{{ widget_data.landing_page_linked_hero_image.src }}') no-repeat; background-size: cover;{% else %}url('http://cdn2.hubspot.net/hub/123171/file-400656407-png/assets/landing-page-hero-bg.png') repeat; background-size: cover;{% endif %}"}
+			.grid-wrapper
+				.one-whole
+					{% header "landing_page_header" label="Page Header", header_tag="h1", value="An Example of a H1" %}
+		
+		.landing-page-body
+			.grid-wrapper
+				.grid.one-quarter.push--three-quarters
+					.landing-page-form
+						{% form "Landing_Page_Form" %}
+					.sharing.palm-hidden
+						.grid-wrapper
+							.grid.one-half
+								%h5 Share This Offer
+							.share-icons
+								.grid.one-quarter
+									%a{:href => "https://www.facebook.com/sharer/sharer.php?u={{ page_meta.canonical_url }}", :target => "_new"
+										%i.fi-social-facebook
+								.grid.one-quarter
+									%a{:href => "http://twitter.com/share?text={{ page_meta.html_title }}&url={{ page_meta.canonical_url }}", :target => "_new"
+										%i.fi-social-twitter
+								.grid.one-quarter
+									%a{:href => "http://www.linkedin.com/shareArticle?mini=true&url={{ page_meta.canonical_url }}&title={{ page_meta.html_title }}&source={{ company_domain }}", :target => "_new"
+										%i.fi-social-linkedin
+				.grid-three-quarters.pull--tree-quarters
+					{% rich_text "landing_page_rich_text" label="Page Content", html="<h2>An Example of a H2</h2><h3>An example of an H3</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit velit sed eros laoreet varius. Aenean vel accumsan ligula. Vestibulum pharetra orci eget tortor consequat varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit velit sed eros laoreet varius. Aenean vel accumsan ligula. Vestibulum pharetra orci eget tortor consequat varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit velit sed eros laoreet varius. Aenean vel accumsan ligula. Vestibulum pharetra orci eget tortor consequat varius.<p><h2>An Example of a H2</h2><h3>An example of an H3</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit velit sed eros laoreet varius. Aenean vel accumsan ligula. Vestibulum pharetra orci eget tortor consequat varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit velit sed eros laoreet varius. Aenean vel accumsan ligula. Vestibulum pharetra orci eget tortor consequat varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit velit sed eros laoreet varius. Aenean vel accumsan ligula. Vestibulum pharetra orci eget tortor consequat varius.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit velit sed eros laoreet varius. Aenean vel accumsan ligula. Vestibulum pharetra orci eget tortor consequat varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit velit sed eros laoreet varius. Aenean vel accumsan ligula. Vestibulum pharetra orci eget tortor consequat varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit velit sed eros laoreet varius. Aenean vel accumsan ligula. Vestibulum pharetra orci eget tortor consequat varius.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit velit sed eros laoreet varius. Aenean vel accumsan ligula. Vestibulum pharetra orci eget tortor consequat varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit velit sed eros laoreet varius. Aenean vel accumsan ligula. Vestibulum pharetra orci eget tortor consequat varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit velit sed eros laoreet varius. Aenean vel accumsan ligula. Vestibulum pharetra orci eget tortor consequat varius.</p>" %}
+
+	-# This Tells HubSpot To Include The Site Footer
+	{% include "custom/page/Layouts/Site_Page_Footer.html" %}
