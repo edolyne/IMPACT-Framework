@@ -34,17 +34,21 @@
       "fileType" : 256,
       "outputStyle" : 0
     },
-    "\/styles\/style.scss" : {
-      "ignoreWasSetByUser" : 0,
+    "\/templates\/Site_Header.haml" : {
+      "inputAbbreviatedPath" : "\/templates\/Site_Header.haml",
+      "outputAbbreviatedPath" : "\/HubSpot\/templates\/Site_Header.html",
+      "outputPathIsSetByUser" : 0,
+      "escapeHTMLCharacters" : 0,
+      "useUnixNewlines" : 0,
+      "useCDATA" : 0,
       "ignore" : 0,
+      "noEscapeInAttributes" : 0,
+      "outputFormat" : 2,
+      "useDoubleQuotes" : 0,
+      "ignoreWasSetByUser" : 0,
       "hidden" : 0,
-      "outputPathIsSetByUser" : 1,
-      "inputAbbreviatedPath" : "\/styles\/style.scss",
-      "outputStyle" : 3,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/HubSpot Upload\/styles\/style.css",
-      "fileType" : 4,
-      "debugStyle" : 0
+      "fileType" : 256,
+      "outputStyle" : 0
     },
     "\/templates\/Landing_Page.haml" : {
       "inputAbbreviatedPath" : "\/templates\/Landing_Page.haml",
@@ -71,17 +75,21 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/styles\/_vars.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
+    "\/templates\/Site_Footer.haml" : {
+      "inputAbbreviatedPath" : "\/templates\/Site_Footer.haml",
+      "outputAbbreviatedPath" : "\/HubSpot\/templates\/Site_Footer.html",
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/styles\/_vars.scss",
-      "outputStyle" : 3,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/HubSpot\/styles\/_vars.css",
-      "fileType" : 4,
-      "debugStyle" : 0
+      "escapeHTMLCharacters" : 0,
+      "useUnixNewlines" : 0,
+      "useCDATA" : 0,
+      "ignore" : 0,
+      "noEscapeInAttributes" : 0,
+      "outputFormat" : 2,
+      "useDoubleQuotes" : 0,
+      "ignoreWasSetByUser" : 0,
+      "hidden" : 0,
+      "fileType" : 256,
+      "outputStyle" : 0
     },
     "\/templates\/Site_Head.haml" : {
       "inputAbbreviatedPath" : "\/templates\/Site_Head.haml",
@@ -99,37 +107,29 @@
       "fileType" : 256,
       "outputStyle" : 0
     },
-    "\/templates\/Site_Footer.haml" : {
-      "inputAbbreviatedPath" : "\/templates\/Site_Footer.haml",
-      "outputAbbreviatedPath" : "\/HubSpot\/templates\/Site_Footer.html",
-      "outputPathIsSetByUser" : 0,
-      "escapeHTMLCharacters" : 0,
-      "useUnixNewlines" : 0,
-      "useCDATA" : 0,
-      "ignore" : 0,
-      "noEscapeInAttributes" : 0,
-      "outputFormat" : 2,
-      "useDoubleQuotes" : 0,
+    "\/styles\/_vars.scss" : {
       "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
       "hidden" : 0,
-      "fileType" : 256,
-      "outputStyle" : 0
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/styles\/_vars.scss",
+      "outputStyle" : 3,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/HubSpot\/styles\/_vars.css",
+      "fileType" : 4,
+      "debugStyle" : 0
     },
-    "\/templates\/Site_Header.haml" : {
-      "inputAbbreviatedPath" : "\/templates\/Site_Header.haml",
-      "outputAbbreviatedPath" : "\/HubSpot\/templates\/Site_Header.html",
-      "outputPathIsSetByUser" : 0,
-      "escapeHTMLCharacters" : 0,
-      "useUnixNewlines" : 0,
-      "useCDATA" : 0,
-      "ignore" : 0,
-      "noEscapeInAttributes" : 0,
-      "outputFormat" : 2,
-      "useDoubleQuotes" : 0,
+    "\/styles\/style.scss" : {
       "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
       "hidden" : 0,
-      "fileType" : 256,
-      "outputStyle" : 0
+      "outputPathIsSetByUser" : 1,
+      "inputAbbreviatedPath" : "\/styles\/style.scss",
+      "outputStyle" : 3,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/HubSpot Upload\/styles\/style.css",
+      "fileType" : 4,
+      "debugStyle" : 0
     }
   },
   "manualImportLinks" : [
