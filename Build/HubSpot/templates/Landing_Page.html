@@ -1,0 +1,53 @@
+<!--
+  [hubspot-metadata]
+{
+    "category": "page", 
+    "creatable": true, 
+    "id": 516227272, 
+    "path": "custom/page/Landing_Pages/main.html"
+}
+[end-hubspot-metadata]
+-->
+<!DOCTYPE html>
+<html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'>
+  {% include "custom/page/Layouts/Site_Page_Head.html" %}
+  <body class='landing-page {{ builtin_body_classes }}'></body>
+  <header>
+    <div class='grid-wrapper'><div class='grid__item desk-one-thrid'>
+        <div class='logo'>
+          {% logo "logo" %}
+        </div>
+      </div><div class='grid__item desk-two-thirds'></div></div>
+    {{standard_header_includes}}
+    {% image "landing_page_linked_hero_image" export_to_template_context=True, src="" %}
+    <div class='landing-page-hero hero' style="background: {% if widget_data.landing_page_linked_hero_image.src %}url('{{ widget_data.landing_page_linked_hero_image.src }}') no-repeat; background-size: cover;{% else %}url('http://cdn2.hubspot.net/hub/123171/file-400656407-png/assets/landing-page-hero-bg.png') repeat; background-size: cover;{% endif %}">
+      <div class='grid'><div class='grid__item one-whole'>
+          {% header "landing_page_header" label="Page Header", header_tag="h1", value="An Example of a H1" %}
+        </div></div>
+    </div>
+    <div class='landing-page-body'>
+      <div class='grid'><div class='grid__item desk-three-quarters lap-two-thirds'>
+          {% rich_text "landing_page_rich_text" label="Page Content", html="<h2>An Example of a H2</h2><h3>An example of an H3</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit velit sed eros laoreet varius. Aenean vel accumsan ligula. Vestibulum pharetra orci eget tortor consequat varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit velit sed eros laoreet varius. Aenean vel accumsan ligula. Vestibulum pharetra orci eget tortor consequat varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit velit sed eros laoreet varius. Aenean vel accumsan ligula. Vestibulum pharetra orci eget tortor consequat varius.<p><h2>An Example of a H2</h2><h3>An example of an H3</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit velit sed eros laoreet varius. Aenean vel accumsan ligula. Vestibulum pharetra orci eget tortor consequat varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit velit sed eros laoreet varius. Aenean vel accumsan ligula. Vestibulum pharetra orci eget tortor consequat varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit velit sed eros laoreet varius. Aenean vel accumsan ligula. Vestibulum pharetra orci eget tortor consequat varius.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit velit sed eros laoreet varius. Aenean vel accumsan ligula. Vestibulum pharetra orci eget tortor consequat varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit velit sed eros laoreet varius. Aenean vel accumsan ligula. Vestibulum pharetra orci eget tortor consequat varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit velit sed eros laoreet varius. Aenean vel accumsan ligula. Vestibulum pharetra orci eget tortor consequat varius.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit velit sed eros laoreet varius. Aenean vel accumsan ligula. Vestibulum pharetra orci eget tortor consequat varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit velit sed eros laoreet varius. Aenean vel accumsan ligula. Vestibulum pharetra orci eget tortor consequat varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit velit sed eros laoreet varius. Aenean vel accumsan ligula. Vestibulum pharetra orci eget tortor consequat varius.</p>" %}
+        </div><div class='grid__item desk-one-quarter lap-one-third'>
+          <div class='landing-page-form'>
+            {% form "Landing_Page_Form" %}
+          </div>
+          <div class='sharing palm-hidden'>
+            <h5>Share This Offer</h5>
+            <div class='share-icons'>
+              <a href='https://www.facebook.com/sharer/sharer.php?u={{ page_meta.canonical_url }}' target='_new'>
+                <i class='fi-social-facebook'></i>
+              </a>
+              <a href='http://twitter.com/share?text={{ page_meta.html_title }}&amp;url={{ page_meta.canonical_url }}' target='_new'>
+                <i class='fi-social-twitter'></i>
+              </a>
+              <a href='http://www.linkedin.com/shareArticle?mini=true&amp;url={{ page_meta.canonical_url }}&amp;title={{ page_meta.html_title }}&amp;source={{ company_domain }}' target='_new'>
+                <i class='fi-social-linkedin'></i>
+              </a>
+            </div>
+          </div>
+        </div></div>
+    </div>
+  </header>
+  {% include "custom/page/Layouts/Site_Page_Footer.html" %}
+</html>

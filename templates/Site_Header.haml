@@ -9,8 +9,8 @@
     
 %header
     %div.top-bar
-        %div.row
-            %div.three.offset-by-nine.columns
+        %div.grid.grid--right
+            %div.grid__item.one-third
                 %span.social-icons
                     %a{:href => "https://plus.google.com/116732344798891680779/posts",
                         :target => "_blank"}
@@ -25,11 +25,11 @@
                     Client Login »
 
     %div.header
-        %div.row
-            %div.three.columns
+        %div.grid
+            %div.grid__item.one-third
                 %div.logo
-                    {% logo "dataone_logo" %}
-            %div.nine.columns
+                    {% logo "logo" %}
+            %div.grid__item.two-thirds
                 %div.menu
                     {% menu "header_menu" label="header_menu", flow="horizontal", flouts="true", max_levels=3, site_map_name="Header Menu" %}
 

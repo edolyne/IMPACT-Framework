@@ -1,0 +1,46 @@
+<!--
+  [hubspot-metadata]
+  {
+  "category": "include",
+  "creatable": false,
+  "path": "custom/page/Layouts/Site_Page_Header.html"
+  }
+  [end-hubspot-metadata]
+-->
+<header>
+  <div class='top-bar'>
+    <div class='grid grid--right'>
+      <div class='grid__item one-third'>
+        <span class='social-icons'>
+          <a href='https://plus.google.com/116732344798891680779/posts' target='_blank'>
+            <i class='fa fa-google-plus'></i>
+          </a>
+          <a href='http://twitter.com/DataOneSoftware' target='_blank'>
+            <i class='fa fa-twitter'></i>
+          </a>
+          <a href='http://www.facebook.com/pages/DataOne-Software/173530752689084' target='_blank'>
+            <i class='fa fa-facebook'></i>
+          </a>
+        </span>
+        <a href='https://my.dataonesoftware.com/client-portal/'>
+          Client Login »
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class='header'>
+    <div class='grid'>
+      <div class='grid__item one-third'>
+        <div class='logo'>
+          {% logo "logo" %}
+        </div>
+      </div>
+      <div class='grid__item two-thirds'>
+        <div class='menu'>
+          {% menu "header_menu" label="header_menu", flow="horizontal", flouts="true", max_levels=3, site_map_name="Header Menu" %}
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+{{ standard_header_includes }}

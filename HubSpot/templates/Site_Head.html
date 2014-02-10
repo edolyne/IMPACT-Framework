@@ -1,0 +1,25 @@
+<!--
+  [hubspot-metadata]
+{
+    "category": "include", 
+    "creatable": false, 
+    "id": 517964670, 
+    "path": "custom/page/Layouts/Site_Page_Head.html"
+}
+[end-hubspot-metadata]
+-->
+<head>
+  <meta charset='utf-8'>
+  <meta content='{{ site_settings.company_name }}' name='author'>
+  <meta content='{{ page_meta.meta_description }}' name='description'>
+  <meta content='HubSpot' name='generator'>
+  <meta content='width=device-width initial-scale=1.0' name='viewport'>
+  <title>Site Title | {{ page_meta.html_title }}</title>
+  {% if site_settings.favicon_src %}<link rel="shortcut icon" href="{{ site_settings.favicon_src }}" />{% endif %}
+  {% block header %} {% endblock %}
+  <link href='../files/styles/style.css?v=2' rel='stylesheet' type='text/css'>
+  <link href='http://impact-framework.hammer.dev/styles/style.css' rel='stylesheet' type='text/css'>
+  <link href='../files/fonts/foundation-icons/foundation-icons.css' rel='stylesheet' type='text/css'>
+  <link href='//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'>
+  <script src='../files/js/vendor/modernizr.js' type='text/javascript'></script>
+</head>

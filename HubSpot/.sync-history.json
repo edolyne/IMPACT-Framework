@@ -1,7 +1,42 @@
 {
+    "files/styles/style.css": {
+        "last_sync_at": 1392065496484, 
+        "id": 518130165, 
+        "last_size": 56192
+    }, 
+    "styles/style.css": {
+        "last_sync_at": 1392067469556, 
+        "id": 518130165, 
+        "last_size": 84653
+    }, 
     "templates/Base_HubSpot_Page.html": {
-        "last_sync_at": 1392060075290, 
+        "last_sync_at": 1392062670662, 
         "id": 512915613, 
-        "last_size": 435
+        "last_size": 459
+    }, 
+    "templates/Full_Width.html": {
+        "last_sync_at": 1392069518174, 
+        "id": 516683197, 
+        "last_size": 2751
+    }, 
+    "templates/Landing_Page.html": {
+        "last_sync_at": 1392068903871, 
+        "id": 516227272, 
+        "last_size": 4935
+    }, 
+    "templates/Site_Footer.html": {
+        "last_sync_at": 1392066147649, 
+        "id": 509477764, 
+        "last_size": 663
+    }, 
+    "templates/Site_Head.html": {
+        "last_sync_at": 1392068993976, 
+        "id": 517964670, 
+        "last_size": 1149
+    }, 
+    "templates/Site_Header.html": {
+        "last_sync_at": 1392065353079, 
+        "id": 516009147, 
+        "last_size": 1383
     }
 }
