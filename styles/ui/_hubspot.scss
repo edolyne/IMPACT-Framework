@@ -1,0 +1,49 @@
+@import "vars";
+
+/*------------------------------------
+	HubSpot Style Overrides
+-------------------------------------*/
+
+.hs-button {
+	@extend .btn;
+}
+
+.menu {
+
+	.hs-menu-wrapper {
+
+		&.hs-menu-flow-horizontal {
+
+			ul {
+				@extend .multi-dropdown;
+
+				a {
+					text-decoration: none;
+					display: block;
+					padding: 0.5em 1em;
+				}
+
+				li {
+					display: inline-block;
+
+					ul {
+						background: white;
+					}
+				}
+			}
+		}
+	}
+
+	a {
+		text-decoration: none;
+		display: block;
+		padding: 0.5em 1em;
+		text-align: left;
+
+		&:hover {
+			text-decoraton: none;
+			background: $brand-color;
+			color: white;
+		}
+	}
+}

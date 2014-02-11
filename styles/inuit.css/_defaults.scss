@@ -71,31 +71,31 @@ $responsive:        true!default;
  * Responsiveness for widescreen/high resolution desktop monitors and beyond?
  * Note: `$responsive` variable above must be set to true before enabling this.
  */
-$responsive-extra:  false!default;
+$responsive-extra:  true!default;
 
 /**
  * Responsive push and pull produce a LOT of code, only turn them on if you
  * definitely need them.
  */
-$push:              false!default;
+$push:              true!default;
 /**
  * Note: `$push` variable above must be set to true before enabling these.
  */
-$palm-push:         false!default;
-$lap-push:          false!default;
-$lap-and-up-push:   false!default;
-$portable-push:     false!default;
-$desk-push:         false!default;
+$palm-push:         true!default;
+$lap-push:          true!default;
+$lap-and-up-push:   true!default;
+$portable-push:     true!default;
+$desk-push:         true!default;
 
-$pull:              false!default;
+$pull:              true!default;
 /**
  * Note: `$pull` variable above must be set to true before enabling these.
  */
-$palm-pull:         false!default;
-$lap-pull:          false!default;
-$lap-and-up-pull:   false!default;
-$portable-pull:     false!default;
-$desk-pull:         false!default;
+$palm-pull:         true!default;
+$lap-pull:          true!default;
+$lap-and-up-pull:   true!default;
+$portable-pull:     true!default;
+$desk-pull:         true!default;
 
 /**
  * Tell inuit.css when breakpoints start.
@@ -118,9 +118,9 @@ $giga-size:         96px!default;
 $mega-size:         72px!default;
 $kilo-size:         48px!default;
 
-$h1-size:           36px!default; // .alpha
-$h2-size:           30px!default; // .beta
-$h3-size:           24px!default; // .gamma
+$h1-size:           45px!default; // .alpha
+$h2-size:           35px!default; // .beta
+$h3-size:           25px!default; // .gamma
 $h4-size:           20px!default; // .delta
 $h5-size:           16px!default; // .epsilon
 $h6-size:           14px!default; // .zeta
@@ -166,12 +166,12 @@ $close-quote:   null;
  * Brand stuff
  */
 $brand-color:       #4a8ec2!default;
-$brand-face:        "Helvetica Neue", sans-serif!default;
+$brand-face:        'Roboto', sans-serif;
 
 /**
  * How big would you like round corners to be by default?
  */
-$brand-round:        4px!default;
+$brand-round:        2px!default;
 
 
 
@@ -183,30 +183,30 @@ $brand-round:        4px!default;
 /**
  * Which objects and abstractions would you like to use?
  */
-$use-grids:         false!default;
-$use-flexbox:       false!default;
-$use-columns:       false!default;
-$use-nav:           false!default;
-$use-options:       false!default;
-$use-pagination:    false!default;
-$use-breadcrumb:    false!default;
-$use-media:         false!default;
-$use-marginalia:    false!default;
-$use-island:        false!default;
-$use-block-list:    false!default;
-$use-matrix:        false!default;
-$use-split:         false!default;
-$use-this-or-this:  false!default;
-$use-link-complex:  false!default;
-$use-flyout:        false!default;
-$use-arrows:        false!default;
-$use-sprite:        false!default;
-$use-icon-text:     false!default;
-$use-beautons:      false!default;
-$use-lozenges:      false!default;
-$use-rules:         false!default;
-$use-stats:         false!default;
-$use-greybox:       false!default;
+$use-grids:         true!default;
+$use-flexbox:       true!default;
+$use-columns:       true!default;
+$use-nav:           true!default;
+$use-options:       true!default;
+$use-pagination:    true!default;
+$use-breadcrumb:    true!default;
+$use-media:         true!default;
+$use-marginalia:    true!default;
+$use-island:        true!default;
+$use-block-list:    true!default;
+$use-matrix:        true!default;
+$use-split:         true!default;
+$use-this-or-this:  true!default;
+$use-link-complex:  true!default;
+$use-flyout:        true!default;
+$use-arrows:        true!default;
+$use-sprite:        true!default;
+$use-icon-text:     true!default;
+$use-beautons:      true!default;
+$use-lozenges:      true!default;
+$use-rules:         true!default;
+$use-stats:         true!default;
+$use-greybox:       true!default;
 
 
 

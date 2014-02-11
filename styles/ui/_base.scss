@@ -1,0 +1,170 @@
+@import "vars";
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,700);
+
+/* Font Smoothing */
+html, a {
+	-webkit-font-smoothing: antialiased !important;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
+/* Setting Base Style Fonts */
+h1 {
+	font-weight: 300;
+}
+
+h2 {
+	font-weight: 400;
+}
+
+h3 {
+	font-weight: 300;
+}
+
+h4 {
+	font-weight: 400;
+}
+
+h5 {
+	font-weight: 700;
+}
+
+html {
+	font-weight: 300;
+}
+
+
+
+header {
+
+	.top-bar {
+		@extend .visuallyhidden--palm;
+
+		.links {
+			@extend .grid;
+			@extend .one-whole;
+
+		}
+	}
+
+	.header {
+		@extend .grid;
+		padding: 1em inherit;
+
+		.logo {
+			@extend .grid__item;
+			@extend .desk-one-sixth;
+			@extend .palm-three-quarters;
+			@extend .lap-one-half;
+			vertical-align: middle;
+
+			img {
+				max-width: 100%;
+			}
+		}
+
+		.menu {
+			@extend .grid__item;
+			@extend .five-sixths;
+			vertical-align: middle;
+			text-align: right;
+
+			ul {
+				margin: 0;
+			}
+
+		}
+	}
+}
+
+.grid, .g {
+	max-width: 73em;
+	margin: 0 auto;
+}
+
+img {
+	max-width: 100%;
+}
+
+.top-bar {
+	text-align: right;
+	background: $brand-color;
+	padding: 0.5em inherit;
+
+	* {
+		color: white;
+	}
+
+}
+
+a {
+	text-decoration: none;
+	color: $brand-color;
+}
+
+.home-hero {
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 4em inherit;
+
+	* {
+		color: white;
+	}
+
+	.btn {
+		display: inline-block;
+
+		a {
+			@extend .btn;
+			background: $brand-color;
+			color: white;
+		}
+	}
+}
+
+.app-download {
+	background: #2d2d2d;
+	padding: 0.5em inherit;
+
+	.content {
+		@extend .grid;
+		@extend .grid--middle;
+
+		.slimbar-cta-copy {
+			@extend .grid__item;
+			@extend .three-quarters;
+			@extend .hard;
+			vertical-align: middle;
+		}
+
+		.download-buttons {
+			@extend .grid__item;
+			@extend .one-quarter;
+			vertical-align: middle;
+
+			img {
+				max-height: 40px;
+				width: auto;
+			}
+
+			a {
+				display: inline-block;
+				color: white;
+			}
+		}
+
+		* {
+			color: white;
+		}
+
+		h2, h5 {
+			margin-bottom: 0;
+		}
+	}
+}
+
+footer {
+
+	.sub-footer {
+		font-size: $milli-size;
+	}
+}
