@@ -41,11 +41,11 @@
 						%h5 Share This Offer
 						.share-icons
 							%a{:href => "https://www.facebook.com/sharer/sharer.php?u={{ page_meta.canonical_url }}", :target => "_new"}
-								%i.fi-social-facebook
+								%i.fa.fa-facebook
 							%a{:href => "http://twitter.com/share?text={{ page_meta.html_title }}&url={{ page_meta.canonical_url }}", :target => "_new"}
-								%i.fi-social-twitter
+								%i.fa.fa-twitter
 							%a{:href => "http://www.linkedin.com/shareArticle?mini=true&url={{ page_meta.canonical_url }}&title={{ page_meta.html_title }}&source={{ company_domain }}", :target => "_new"}
-								%i.fi-social-linkedin
+								%i.fa.fa-linkedin
 
 	-# This Tells HubSpot To Include The Site Footer
 	{% include "custom/page/Layouts/Site_Page_Footer.html" %}

@@ -1,0 +1,38 @@
+/
+	[hubspot-metadata]
+	{
+	"category": "page", 
+	"creatable": true,
+	"path": "custom/page/Sidebar_Right.html"
+	}
+	[end-hubspot-metadata]
+
+!!! 5
+%html{:xmlns => "http://www.w3.org/1999/xhtml", "xml:lang" => "en", :lang => "en"}
+
+	-# This Tells HubSpot To Include The Site Head
+	{% include "custom/page/Layouts/Site_Page_Head.html" %}
+
+	%body.subpage.sidebar-right
+
+		-# This Tells HubSpot To Include The Site Header
+		{% include "custom/page/Layouts/Site_Page_Header.html" %}
+
+		{% image "subpage_right_sidebar_linked_hero_image" export_to_template_context=True, src="" %}
+		.hero{:style => "background: url('{% if widget_data.subpage_right_sidebar_linked_hero_image.src %}{{ widget_data.landing_page_linked_hero_image.src }}{% else %}http://cdn2.hubspot.net/hub/123171/file-400656407-png/assets/landing-page-hero-bg.png{% endif %}') no-repeat; background-size: cover;"}
+			.g
+				.g.one-whole
+					{% header "Subpage Right Sidebar H1" label="Page Header", no_wrapper=True, header_tag="h1", value="This is an H1" %}
+		
+		.content
+			.g.two-thirds>
+				.copy
+					{% rich_text "Page Content" label="Page Content", no_wrapper=True, html="<h2>An Example of a H2</h2><h3>An example of an H3</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit velit sed eros laoreet varius. Aenean vel accumsan ligula. Vestibulum pharetra orci eget tortor consequat varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit velit sed eros laoreet varius. Aenean vel accumsan ligula. Vestibulum pharetra orci eget tortor consequat varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit velit sed eros laoreet varius. Aenean vel accumsan ligula. Vestibulum pharetra orci eget tortor consequat varius.</p><h2>An Example of a H2</h2><h3>An example of an H3</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit velit sed eros laoreet varius. Aenean vel accumsan ligula. Vestibulum pharetra orci eget tortor consequat varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit velit sed eros laoreet varius. Aenean vel accumsan ligula. Vestibulum pharetra orci eget tortor consequat varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit velit sed eros laoreet varius. Aenean vel accumsan ligula. Vestibulum pharetra orci eget tortor consequat varius.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit velit sed eros laoreet varius. Aenean vel accumsan ligula. Vestibulum pharetra orci eget tortor consequat varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit velit sed eros laoreet varius. Aenean vel accumsan ligula. Vestibulum pharetra orci eget tortor consequat varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit velit sed eros laoreet varius. Aenean vel accumsan ligula. Vestibulum pharetra orci eget tortor consequat varius.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit velit sed eros laoreet varius. Aenean vel accumsan ligula. Vestibulum pharetra orci eget tortor consequat varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit velit sed eros laoreet varius. Aenean vel accumsan ligula. Vestibulum pharetra orci eget tortor consequat varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit velit sed eros laoreet varius. Aenean vel accumsan ligula. Vestibulum pharetra orci eget tortor consequat varius.</p>" %}
+
+			.g.one-third>
+				.sidebar
+					.sticky-cta
+						{% cta "subpage_sidebar_cta" %}
+	
+	-# This Tells HubSpot To Include The Site Footer
+	{% include "custom/page/Layouts/Site_Page_Footer.html" %}

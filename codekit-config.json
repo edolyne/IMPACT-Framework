@@ -267,15 +267,6 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/HubSpot\/templates\/Landing_Page.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/HubSpot\/templates\/Landing_Page.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/styles\/inuit.css\/objects\/_marginalia.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -287,6 +278,15 @@
       "outputAbbreviatedPath" : "\/HubSpot\/styles\/_marginalia.css",
       "fileType" : 4,
       "debugStyle" : 0
+    },
+    "\/HubSpot\/templates\/Landing_Page.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/HubSpot\/templates\/Landing_Page.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/styles\/inuit.css\/base\/_code.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -616,6 +616,22 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
+    "\/templates\/Sidebar_Right.haml" : {
+      "inputAbbreviatedPath" : "\/templates\/Sidebar_Right.haml",
+      "outputAbbreviatedPath" : "\/HubSpot\/templates\/Sidebar_Right.html",
+      "outputPathIsSetByUser" : 0,
+      "escapeHTMLCharacters" : 0,
+      "useUnixNewlines" : 0,
+      "useCDATA" : 0,
+      "ignore" : 0,
+      "noEscapeInAttributes" : 0,
+      "outputFormat" : 2,
+      "useDoubleQuotes" : 0,
+      "ignoreWasSetByUser" : 0,
+      "hidden" : 0,
+      "fileType" : 256,
+      "outputStyle" : 0
+    },
     "\/Build\/HubSpot\/files\/styles\/style.css" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -921,6 +937,24 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
+    "\/Build\/templates\/Sidebar_Right.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/Build\/templates\/Sidebar_Right.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/Build\/HubSpot\/templates\/Sidebar_Right.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/Build\/HubSpot\/templates\/Sidebar_Right.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/styles\/inuit.css\/objects\/_lozenges.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -930,18 +964,6 @@
       "outputStyle" : 3,
       "shouldRunBless" : 0,
       "outputAbbreviatedPath" : "\/HubSpot\/styles\/_lozenges.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
-    "\/styles\/inuit.css\/objects\/_rules.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/styles\/inuit.css\/objects\/_rules.scss",
-      "outputStyle" : 3,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/HubSpot\/styles\/_rules.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -963,6 +985,27 @@
       "outputStyle" : 3,
       "shouldRunBless" : 0,
       "outputAbbreviatedPath" : "\/HubSpot\/styles\/_split.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/HubSpot\/templates\/Sidebar_Right.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/HubSpot\/templates\/Sidebar_Right.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/styles\/inuit.css\/objects\/_rules.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/styles\/inuit.css\/objects\/_rules.scss",
+      "outputStyle" : 3,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/HubSpot\/styles\/_rules.css",
       "fileType" : 4,
       "debugStyle" : 0
     },

@@ -5,7 +5,7 @@
         "last_size": 56192
     }, 
     "styles/style.css": {
-        "last_sync_at": 1392067469556, 
+        "last_sync_at": 1392069828675, 
         "id": 518130165, 
         "last_size": 84653
     }, 
@@ -20,9 +20,14 @@
         "last_size": 2751
     }, 
     "templates/Landing_Page.html": {
-        "last_sync_at": 1392068903871, 
+        "last_sync_at": 1392127740625, 
         "id": 516227272, 
-        "last_size": 4935
+        "last_size": 4923
+    }, 
+    "templates/Sidebar_Right.html": {
+        "last_sync_at": 1392128454232, 
+        "id": 516396046, 
+        "last_size": 3868
     }, 
     "templates/Site_Footer.html": {
         "last_sync_at": 1392066147649, 
